@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seniors With $15,000+ In Debt: This Program Can Wipe It Out Today.</title>
+  <meta name="description" content="The SSA quietly approved the No Debt For Seniors (NDFS) program. Eligible seniors 60+ with $15,000+ in unsecured debt may wipe it out without a new loan or bankruptcy. Check eligibility free.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="images/sticky-note.jpg" type="image/jpeg">
+  <style>
+    :root {
+      --ink: #111;
+      --muted: #444;
+      --line: #e8e8e8;
+      --hl: rgb(255, 227, 128);
+      --cta: #68a339;
+      --cta-d: #578a2f;
+      --btn: #0073e6;
+      --primary: #0059b3;
+      --max: 720px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Inter, -apple-system, system-ui, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: #fff;
+      font-size: 18px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 16px; }
+
+    .announce {
+      background: #fffdf5;
+      border-bottom: 1px solid #f0e6c8;
+      text-align: center;
+      padding: 12px 14px;
+      font-size: 15px;
+      line-height: 1.45;
+    }
+    .announce .upd { color: #d10000; font-weight: 700; }
+    .announce strong { font-weight: 700; }
+
+    .page { padding: 22px 0 40px; }
+
+    h1.hero {
+      font-family: Lora, Georgia, serif;
+      font-size: clamp(28px, 5.5vw, 48px);
+      font-weight: 700;
+      line-height: 1.3;
+      letter-spacing: 0;
+      margin: 0 0 16px;
+    }
+
+    .lead { margin: 0 0 14px; color: var(--ink); }
+    .hl { background: var(--hl); padding: 0 2px; }
+
+    .byline {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 16px;
+      font-weight: 400;
+      color: #65758b;
+      margin: 24px 0 18px;
+    }
+    .byline-who { display: flex; align-items: center; gap: 8px; }
+    .byline-av {
+      width: 40px; height: 40px; border-radius: 50%;
+      object-fit: cover; flex-shrink: 0; display: block;
+    }
+
+    .shot { margin: 18px 0 22px; }
+    .shot img { width: 100%; border-radius: 8px; }
+
+    p { margin: 0 0 14px; font-weight: 400; }
+    p.bold { font-weight: 700; }
+
+    h2 {
+      font-family: Lora, Georgia, serif;
+      font-size: clamp(24px, 4.5vw, 36px);
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 28px 0 12px;
+    }
+
+    .checks { list-style: none; margin: 10px 0 16px; }
+    .checks li {
+      position: relative;
+      padding-left: 28px;
+      margin: 0 0 10px;
+      font-size: 17px;
+    }
+    .checks li::before {
+      content: "✓";
+      position: absolute;
+      left: 0; top: 0;
+      color: var(--cta);
+      font-weight: 700;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--btn);
+      color: #fff !important;
+      font-family: Inter, system-ui, sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
+      padding: 28px 40px;
+      border-radius: 8px;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -4px rgba(0,0,0,.1);
+      transition: all .15s ease;
+      text-align: center;
+    }
+    .cta:hover {
+      background: #0068d1;
+      transform: scale(1.02);
+      box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 8px 10px -6px rgba(0,0,0,.1);
+    }
+    .cta-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 32px 0 24px;
+      margin: 12px 0 8px;
+    }
+    .cta-box {
+      background: linear-gradient(to right bottom, rgba(0, 89, 179, .1), rgba(22, 162, 73, .1));
+      border: 2px solid rgba(0, 89, 179, .2);
+      border-radius: 12px;
+      padding: 40px 24px;
+      text-align: center;
+      margin: 36px 0;
+    }
+    .cta-box h3 {
+      font-family: Lora, Georgia, serif;
+      font-size: clamp(24px, 4vw, 30px);
+      font-weight: 700;
+      margin: 0 0 14px;
+      line-height: 1.25;
+    }
+    .cta-box-lead { font-size: 20px; font-weight: 500; margin: 0 0 10px; }
+    .cta-box-sub { font-size: 16px; color: #64748b; margin: 0 0 28px; font-weight: 400; }
+    .cta-lock { font-size: 14px; color: #64748b; margin: 24px 0 0; font-weight: 400; }
+    .steps-cta {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 6px;
+      margin: 0 0 24px;
+    }
+    .steps-cta .step { display: flex; flex-direction: column; align-items: center; }
+    .steps-cta .circ {
+      width: 40px; height: 40px; border-radius: 50%;
+      border: 2px solid var(--primary);
+      background: rgba(0, 89, 179, .1);
+      color: var(--primary);
+      font-weight: 700; font-size: 14px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .steps-cta .step span {
+      font-size: 12px; color: #64748b; margin-top: 4px;
+      text-align: center; white-space: nowrap;
+    }
+    .steps-cta .line {
+      width: 28px; height: 2px; background: #e1e7ef;
+      margin-top: 19px; flex-shrink: 0;
+    }
+
+    .fb {
+      margin: 28px 0 10px;
+      border-top: 1px solid #e8e8e8;
+      padding-top: 18px;
+    }
+    .fb-head {
+      font-size: 15px; font-weight: 700; margin-bottom: 14px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .comment {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      gap: 10px;
+      margin: 0 0 14px;
+    }
+    .av {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: linear-gradient(135deg, #cfd8dc, #90a4ae);
+      color: #fff; display: flex; align-items: center; justify-content: center;
+      font-size: 13px; font-weight: 700;
+    }
+    .bubble { background: #f0f2f5; border-radius: 16px; padding: 10px 12px; }
+    .bubble .name { font-weight: 700; font-size: 14px; margin-bottom: 2px; }
+    .bubble .txt { font-size: 14.5px; line-height: 1.4; }
+    .actions { font-size: 12px; color: #65676b; margin: 4px 0 0 12px; font-weight: 600; }
+
+    .disc { font-size: 12px; color: #777; line-height: 1.5; margin: 24px 0 28px; }
+    .disc a { text-decoration: underline; }
+    .ad-note {
+      font-size: 11px;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin: 0 0 18px;
+      font-weight: 600;
+    }
+    .legal {
+      font-size: 12px;
+      color: #777;
+      line-height: 1.55;
+      margin: 0 0 90px;
+    }
+    .legal .head {
+      font-size: 13px;
+      font-weight: 700;
+      color: #888;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+
+    .sticky {
+      position: fixed; left: 0; right: 0; bottom: 0;
+      background: rgba(255,255,255,.97);
+      border-top: 1px solid #e5e5e5;
+      padding: 10px 0; z-index: 50;
+      transform: translateY(110%);
+      transition: transform .3s ease;
+      box-shadow: 0 -4px 18px rgba(0,0,0,.08);
+    }
+    .sticky.show { transform: translateY(0); }
+    .sticky .wrap { display: flex; gap: 10px; align-items: center; }
+    .sticky .cta { margin: 0; padding: 14px 18px; font-size: 16px; line-height: 1.2; width: auto; flex: 1.2; }
+    .sticky .left { flex: 1; min-width: 0; font-size: 13px; font-weight: 700; }
+    .sticky .left span { display: block; font-weight: 500; color: #666; font-size: 12px; }
+
+    @media (max-width: 560px) {
+      body { font-size: 16.5px; }
+      .announce { font-size: 13.5px; }
+      .checks li { font-size: 15.5px; }
+      .sticky .left { display: none; }
+      .cta { width: 100%; padding: 22px 16px; font-size: 18px; }
+      .cta-box { padding: 28px 16px; }
+      .steps-cta .line { width: 20px; }
+      .steps-cta .circ { width: 36px; height: 36px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="announce">
+  <span style="font-size:18px;">🚨</span>
+  <span class="upd">UPDATE:</span>
+  The SSA quietly approved <strong>No Debt For Seniors (NDFS)</strong>: eligible seniors 60+ with $15,000+ in debt may wipe it out today.
+</div>
+
+<main class="page">
+  <div class="wrap">
+    <p class="ad-note">Advertisement</p>
+
+    <h1 class="hero">Seniors With $15,000+ In Debt: This Program Can Wipe It Out Today.</h1>
+
+    <p class="lead">
+      If you're a senior drowning in credit card debt, you've been told your only options are a loan you can't afford or a bankruptcy that destroys your future. <span class="hl">That's no longer true. Eligible seniors can wipe unsecured debt to ZERO — no new loan, no bankruptcy.</span>
+    </p>
+
+    <div class="byline">
+      <span class="byline-who">
+        <img class="byline-av" src="images/byline.png" alt="Chad Walker" width="40" height="40">
+        <span>Chad Walker</span>
+      </span>
+      <span>•</span>
+      <span>August 25, 2026</span>
+    </div>
+
+    <figure class="shot">
+      <img src="images/sticky-note.jpg" alt="A green sticky note that says say bye bye to credit card debt next to a zero balance statement" width="1400" height="790">
+    </figure>
+
+    <p>The SSA quietly approved a new initiative called the “No Debt For Seniors” (NDFS) program. It allows eligible seniors to completely eliminate their unsecured debt — without a new loan and without bankruptcy.</p>
+
+    <p class="bold">This is a total debt wipeout.</p>
+
+    <h2 id="stickyStart">How It Works</h2>
+
+    <p>This program leverages a little-known SSA provision that allows seniors with significant hardship to have their credit card debt legally forgiven through a special fund.</p>
+
+    <p>For you, this means the balance on your credit card statements can be wiped out to <span class="hl">ZERO</span>.</p>
+
+    <p>To see if you qualify, follow these steps:</p>
+
+    <ul class="checks">
+      <li><strong>Check Eligibility:</strong> Are you 60+ with $15,000+ in debt? If yes, you likely qualify.</li>
+      <li><strong>Free Consultation:</strong> Talk to an approved specialist at no cost. They will confirm your eligibility.</li>
+      <li><strong>Wipe Out Your Debt:</strong> If you choose to enroll, your balances are frozen and the process of eliminating them begins.</li>
+    </ul>
+
+    <p>The benefits are immediate: No more harassing phone calls. No more minimum payments. Just the relief of being debt-free.</p>
+
+    <div class="cta-wrap">
+      <div class="steps-cta">
+        <div class="step"><div class="circ">1</div><span>Check Eligibility</span></div>
+        <div class="line"></div>
+        <div class="step"><div class="circ">2</div><span>Free Consultation</span></div>
+        <div class="line"></div>
+        <div class="step"><div class="circ">3</div><span>Wipe Out Debt</span></div>
+      </div>
+      <a class="cta" href="index.html">Check My Eligibility Now</a>
+    </div>
+
+    <h2>Why You Must Act Now</h2>
+
+    <p>Banks and credit card companies hate this program and are lobbying to end it. Its funding is not guaranteed forever (or even tomorrow). Every day you wait is another day you're throwing money away on a debt you can legally eliminate.</p>
+
+    <p class="bold">Don't wait. See if you qualify. Checking your eligibility is free and takes less than 60 seconds.</p>
+
+    <p>Click on the button below and go to the next page, enter some basic information and that’s it. In 60 seconds, you’ll know if you qualify to get your debt completely forgiven.</p>
+
+    <div class="cta-box">
+      <h3>Check If You Qualify for NDFS</h3>
+      <p class="cta-box-lead">See if your credit card balances can be wiped out to zero.</p>
+      <p class="cta-box-sub">Free eligibility check • 60 seconds • No new loan required</p>
+
+      <div class="steps-cta">
+        <div class="step"><div class="circ">1</div><span>Check Eligibility</span></div>
+        <div class="line"></div>
+        <div class="step"><div class="circ">2</div><span>Free Consultation</span></div>
+        <div class="line"></div>
+        <div class="step"><div class="circ">3</div><span>Wipe Out Debt</span></div>
+      </div>
+      <a class="cta" href="index.html">Check My Eligibility Now</a>
+      <p class="cta-lock">🔒 Your information is secure and will never be shared</p>
+    </div>
+
+    <div class="fb">
+      <div class="fb-head">
+        <span>48 Comments</span>
+        <span style="font-weight:500;color:#65676b;font-size:13px;">Most relevant ▾</span>
+      </div>
+      <div class="comment">
+        <div class="av">JK</div>
+        <div>
+          <div class="bubble">
+            <div class="name">James K.</div>
+            <div class="txt">Was skeptical but the 60 seconds is worth it. I qualified, they froze the balances, and I’m finally not dreading the mail. Don't overthink it, just check.</div>
+          </div>
+          <div class="actions">Like · Reply · 2h</div>
+        </div>
+      </div>
+      <div class="comment">
+        <div class="av" style="background:linear-gradient(135deg,#ef9a9a,#e57373)">MR</div>
+        <div>
+          <div class="bubble">
+            <div class="name">Maria R.</div>
+            <div class="txt">NDFS is the program. Free check, then a specialist walks you through it. No new loan.</div>
+          </div>
+          <div class="actions">Like · Reply · 1h</div>
+        </div>
+      </div>
+      <div class="comment">
+        <div class="av" style="background:linear-gradient(135deg,#90caf9,#64b5f6)">DL</div>
+        <div>
+          <div class="bubble">
+            <div class="name">David L.</div>
+            <div class="txt">60+, $15,000+, then the free consult. That's it.</div>
+          </div>
+          <div class="actions">Like · Reply · 58m</div>
+        </div>
+      </div>
+      <div class="comment">
+        <div class="av" style="background:linear-gradient(135deg,#a5d6a7,#66bb6a)">SK</div>
+        <div>
+          <div class="bubble">
+            <div class="name">Sarah K.</div>
+            <div class="txt">I needed to hear it wasn’t bankruptcy or another loan. This is the wipeout I was looking for.</div>
+          </div>
+          <div class="actions">Like · Reply · 45m</div>
+        </div>
+      </div>
+      <div class="comment">
+        <div class="av" style="background:linear-gradient(135deg,#ce93d8,#ba68c8)">TB</div>
+        <div>
+          <div class="bubble">
+            <div class="name">Tom B.</div>
+            <div class="txt">Calls stopped after I enrolled. Wish I hadn’t waited so long paying minimums.</div>
+          </div>
+          <div class="actions">Like · Reply · 40m</div>
+        </div>
+      </div>
+      <div class="comment">
+        <div class="av" style="background:linear-gradient(135deg,#ffcc80,#ffa726)">AH</div>
+        <div>
+          <div class="bubble">
+            <div class="name">Ann H.</div>
+            <div class="txt">Sent this to my brother. He checked the same night and qualified.</div>
+          </div>
+          <div class="actions">Like · Reply · 33m</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="disc">Privacy · Terms · Contact</p>
+
+    <div class="legal">
+      <p class="head">This is an advertorial and not an actual news article, blog, or consumer protection update</p>
+      <p>If you pre-qualify for a debt relief program, your individual results will vary. Settlement estimates and testimonials are examples of past performance only and are not intended to be a guarantee of future results. Program fees and commitment length under informal settlements will also vary depending on the amount that your debt can be reduced and your ability to save funds. ssaprograms.org is not a government agency and is not affiliated with the Social Security Administration. ssaprograms.org does not assume or pay any debts, provide legal advice or offer credit repair services. If you need legal advice you must consult with a licensed attorney. On completion of our form, we may introduce you to one of our debt relief partners using the contact details you have provided to us. If so, we may receive compensation for this introduction. Your credit rating may be affected by entering into a debt relief program. May not be available in all states.</p>
+    </div>
+  </div>
+</main>
+
+<div class="sticky" id="sticky">
+  <div class="wrap">
+    <div class="left">
+      No Debt For Seniors
+      <span>Free eligibility check · 60 seconds</span>
+    </div>
+    <a class="cta" href="index.html">Check My Eligibility Now</a>
+  </div>
+</div>
+
+<script>
+(function () {
+  var OFFER = 'index.html';
+  document.querySelectorAll('a.cta').forEach(function (a) {
+    a.setAttribute('href', OFFER);
+  });
+  var sticky = document.getElementById('sticky');
+  var start = document.getElementById('stickyStart');
+  function inView(el) {
+    var r = el.getBoundingClientRect();
+    return r.bottom > 80 && r.top < window.innerHeight;
+  }
+  function updateSticky() {
+    if (!sticky || !start) return;
+    var started = start.getBoundingClientRect().top <= window.innerHeight * 0.75;
+    var ctaOnScreen = false;
+    document.querySelectorAll('.cta-wrap, .cta-box').forEach(function (el) {
+      if (inView(el)) ctaOnScreen = true;
+    });
+    sticky.classList.toggle('show', started && !ctaOnScreen);
+  }
+  updateSticky();
+  window.addEventListener('scroll', updateSticky, { passive: true });
+  window.addEventListener('resize', updateSticky);
+})();
+</script>
+</body>
+</html>

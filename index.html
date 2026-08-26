@@ -137,18 +137,47 @@
       font-size: 18px;
       padding: 14px 16px;
       min-height: 52px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       transition: transform 0.12s ease, background 0.12s ease, box-shadow 0.12s ease;
     }
 
     .btn:active { transform: scale(0.98); }
 
     .btn-yes {
+      position: relative;
+      z-index: 1;
       background: var(--green);
       color: #fff;
-      box-shadow: 0 2px 0 #1e8a36;
+      box-shadow: 0 2px 0 #1e8a36, 0 0 16px 6px rgba(45, 184, 76, 0.75);
+      animation: cta-glow 1.5s ease-in-out infinite;
+    }
+
+    .btn-yes::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      z-index: -1;
+      box-shadow: 0 0 0 0 rgba(45, 184, 76, 0.65);
+      animation: cta-ring 1.6s ease-out infinite;
+      pointer-events: none;
     }
 
     .btn-yes:hover { background: var(--green-hover); }
+
+    @keyframes cta-glow {
+      0%, 100% { box-shadow: 0 2px 0 #1e8a36, 0 0 10px 3px rgba(45, 184, 76, 0.5); }
+      50% { box-shadow: 0 2px 0 #1e8a36, 0 0 24px 8px rgba(45, 184, 76, 0.95); }
+    }
+
+    @keyframes cta-ring {
+      0% { box-shadow: 0 0 0 0 rgba(45, 184, 76, 0.7); }
+      70% { box-shadow: 0 0 0 14px rgba(45, 184, 76, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(45, 184, 76, 0); }
+    }
 
     .btn-no {
       background: var(--gray-btn);
@@ -245,7 +274,7 @@
       <div class="quiz" id="quiz">
         <h2>Do You Have $20,000+ In Credit Card Debt?</h2>
         <div class="btns">
-          <button class="btn btn-yes" type="button" id="yesBtn">YES</button>
+          <a class="btn btn-yes" href="https://www.google.com" id="yesBtn">YES</a>
           <button class="btn btn-no" type="button" id="noBtn">No</button>
         </div>
       </div>
@@ -273,12 +302,6 @@
     const quiz = document.getElementById("quiz");
     const yesResult = document.getElementById("yesResult");
     const noResult = document.getElementById("noResult");
-
-    document.getElementById("yesBtn").addEventListener("click", function () {
-      quiz.classList.add("hidden");
-      yesResult.classList.add("show");
-      noResult.classList.remove("show");
-    });
 
     document.getElementById("noBtn").addEventListener("click", function () {
       quiz.classList.add("hidden");
