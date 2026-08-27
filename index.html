@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>2026 Senior Debt Relief Program | SSA Programs</title>
-  <meta name="description" content="Seniors struggling with $20,000+ in credit card debt may be eligible for relief. Check eligibility for the 2026 Senior Debt Relief Program.">
+  <meta name="description" content="Seniors struggling with $15,000+ in credit card debt may be eligible for relief. Check eligibility for the 2026 Senior Debt Relief Program.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -221,9 +221,21 @@
       width: 100%;
       text-align: center;
       color: #777;
-      font-size: 12px;
+      font-size: 13px;
       padding: 18px 8px 0;
       line-height: 1.5;
+    }
+
+    footer a {
+      color: #666;
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    footer .sep {
+      margin: 0 10px;
+      color: #bbb;
     }
 
     @media (max-width: 520px) {
@@ -265,36 +277,38 @@
   <main class="page">
     <section class="card">
       <div class="card-body">
-        <h1>Seniors Struggling With $20,000+ In Credit Card Debt May Be Eligible For Relief Through This Program</h1>
+        <h1>Seniors Struggling With $15,000+ In Credit Card Debt May Be Eligible For Relief Through This Program</h1>
         <div class="hero">
           <img src="images/hero.jpg" alt="A family member helping a senior review program information on a phone">
         </div>
       </div>
 
       <div class="quiz" id="quiz">
-        <h2>Do You Have $20,000+ In Credit Card Debt?</h2>
+        <h2>Do You Have $15,000+ In Credit Card Debt?</h2>
         <div class="btns">
-          <a class="btn btn-yes" href="https://www.google.com" id="yesBtn">YES</a>
-          <button class="btn btn-no" type="button" id="noBtn">No</button>
+          <a class="btn btn-yes" href="https://trk.wiseselectchoice.online/click" id="yesBtn">YES</a>
+          <a class="btn btn-no" href="https://trk.wiseselectchoice.online/click" id="noBtn">No</a>
         </div>
       </div>
 
       <div class="quiz result" id="yesResult">
         <h2>You May Qualify For Relief</h2>
         <p>Based on your answer, you may be eligible for the 2026 Senior Debt Relief Program. Continue to review your options.</p>
-        <button class="btn btn-yes" type="button">Continue</button>
+        <a class="btn btn-yes" href="https://trk.wiseselectchoice.online/click">Continue</a>
         <button class="back" type="button" data-back>Start over</button>
       </div>
 
       <div class="quiz result" id="noResult">
         <h2>This Program May Not Apply</h2>
-        <p>This program is intended for seniors with $20,000 or more in credit card debt.</p>
+        <p>This program is intended for seniors with $15,000 or more in credit card debt.</p>
         <button class="back" type="button" data-back>Start over</button>
       </div>
     </section>
 
     <footer>
-      ssaprograms.org is not a government agency and is not affiliated with the Social Security Administration or any federal program.
+      <a href="privacy.html">Privacy Policy</a>
+      <span class="sep">|</span>
+      <a href="terms.html">Terms and Conditions</a>
     </footer>
   </main>
 
@@ -302,12 +316,6 @@
     const quiz = document.getElementById("quiz");
     const yesResult = document.getElementById("yesResult");
     const noResult = document.getElementById("noResult");
-
-    document.getElementById("noBtn").addEventListener("click", function () {
-      quiz.classList.add("hidden");
-      noResult.classList.add("show");
-      yesResult.classList.remove("show");
-    });
 
     document.querySelectorAll("[data-back]").forEach(function (btn) {
       btn.addEventListener("click", function () {

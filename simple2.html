@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>New Rule For Seniors in $15,000+ of Credit Card or Medical Debt</title>
+  <meta name="description" content="New rule for seniors in $15,000+ of credit card or medical debt. Check if you qualify for immediate help.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #212529;
+      line-height: 1.5;
+      background: #1a1a2e url("images/bg.jpg") center / cover no-repeat fixed;
+    }
+    .wrap {
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 15px;
+      flex: 1;
+    }
+    .card {
+      max-width: 960px;
+      margin: 24px auto;
+      background: #ffeda6;
+      padding: 24px;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.25;
+      text-align: center;
+    }
+    .lead {
+      margin: 0 0 8px;
+      font-size: 1.25rem;
+      font-weight: 400;
+      text-align: center;
+    }
+    .progress {
+      display: flex;
+      height: 30px;
+      margin: 24px 0;
+      overflow: hidden;
+      border-radius: 4px;
+    }
+    .progress .fill {
+      width: 40%;
+      height: 30px;
+      background: #d71315;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+    .progress .rest {
+      width: 60%;
+      height: 30px;
+      background: #f2f2f2;
+    }
+    h2 {
+      margin: 0 0 16px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    .btns {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .btn {
+      appearance: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #224263;
+      color: #fff;
+      border: 0;
+      border-radius: 4px;
+      font-size: 1.5rem;
+      font-weight: 500;
+      padding: 10px 24px;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: inherit;
+      line-height: 1.2;
+    }
+    .btn:hover { background: #d71315; color: #fff; }
+    .btn img {
+      width: 30px;
+      height: 30px;
+      display: block;
+    }
+    .trust {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .trust img {
+      max-height: 60px;
+      width: auto;
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      margin: 16px 0;
+    }
+    .disclaimer {
+      display: block;
+      font-size: 80%;
+      color: #6c757d;
+    }
+    .result { display: none; text-align: center; }
+    .result.show { display: block; }
+    .quiz.hidden { display: none; }
+    .result p {
+      margin: 0 0 16px;
+      font-size: 1.05rem;
+    }
+    .back {
+      display: inline-block;
+      margin-top: 8px;
+      background: none;
+      border: 0;
+      color: #224263;
+      text-decoration: underline;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 15px;
+    }
+    footer {
+      max-width: 960px;
+      margin: 0 auto 24px;
+      padding: 8px 15px 16px;
+      text-align: center;
+      font-size: 14px;
+    }
+    footer a {
+      color: #000;
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+    footer .sep { margin: 0 10px; color: #666; }
+    footer .copy {
+      margin: 10px 0 0;
+      font-size: 13px;
+    }
+    @media (min-width: 768px) {
+      h1 { font-size: 2.5rem; }
+      h2 { font-size: 1.75rem; }
+      .card { padding: 32px; }
+      .progress .fill { width: 20%; }
+      .progress .rest { width: 80%; }
+    }
+    @media (max-width: 420px) {
+      .btns { flex-direction: column; align-items: stretch; }
+      .btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>New Rule For Seniors in $15,000+ of Credit Card or Medical Debt</h1>
+      <p class="lead">If you qualify you could be eligible to get immediate help!</p>
+
+      <div class="progress">
+        <div class="fill">Almost complete...</div>
+        <div class="rest"></div>
+      </div>
+
+      <div class="quiz" id="quiz">
+        <h2>Do you owe more than $15,000 in total?</h2>
+        <div class="btns">
+          <a class="btn" href="https://trk.wiseselectchoice.online/click">
+            <img src="images/check.png" alt="" width="30" height="30">
+            Yes
+          </a>
+          <a class="btn" href="https://trk.wiseselectchoice.online/click">
+            <img src="images/x.png" alt="" width="30" height="30">
+            No
+          </a>
+        </div>
+      </div>
+
+      <div class="result" id="noResult">
+        <h2>This Program May Not Apply</h2>
+        <p>This program is intended for seniors with $15,000 or more in credit card or medical debt.</p>
+        <button class="back" type="button" data-back>Start over</button>
+      </div>
+
+      <div class="trust">
+        <img src="images/trustpilot.png" alt="Trustpilot Excellent rating">
+      </div>
+
+      <hr>
+
+      <small class="disclaimer">SSA Programs is an independent service that is supported by advertising. The offers that appear on this page are from companies from which SSA Programs receives compensation. Editorial Note: The editorial content on this page is created by and property of SSA Programs. It is not provided by the companies whose products and service are discussed. Opinions expressed here are SSA Programs alone and have not been reviewed, approved or otherwise endorsed by any third party. Not all clients are able to complete their program for various reasons, including their ability to save sufficient funds. Neither we nor our partners guarantee that your debts will be resolved for a specific amount or percentage or within a specific period of time. Please contact a tax professional to discuss potential tax consequences of less than full balance debt resolution. Read and understand all program materials prior to enrollment. The use of debt settlement services will likely adversely affect your creditworthiness, may result in you being subject to collections or being sued by creditors or collectors and may increase the outstanding balances of your enrolled accounts due to the accrual of fees and interest. However, negotiated settlements obtained on your behalf resolve the entire account, including all accrued fees and interest. This service is not available in all states, and fees may vary from state to state.</small>
+    </div>
+
+    <footer>
+      <a href="privacy.html">Privacy Policy</a>
+      <span class="sep">|</span>
+      <a href="terms.html">Terms and Conditions</a>
+      <p class="copy">Copyright © 2026 All Rights Reserved. SSA Programs.</p>
+    </footer>
+  </div>
+</body>
+</html>
