@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Open All 20 Variants | SSA Programs</title>
+  <meta name="description" content="Opens all 20 senior debt relief page variants in new Chrome tabs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --yellow: #f5c518;
+      --green: #2db84c;
+      --green-hover: #249a3f;
+      --page-bg: #ececec;
+      --card: #ffffff;
+      --text: #111;
+      --muted: #444;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--page-bg);
+      color: var(--text);
+      line-height: 1.45;
+      -webkit-font-smoothing: antialiased;
+    }
+    .notice {
+      background: var(--yellow);
+      color: #111;
+      font-weight: 800;
+      font-size: 14px;
+      text-align: center;
+      padding: 12px 16px;
+    }
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 14px;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+      padding: 24px 20px 20px;
+    }
+    h1 {
+      font-size: clamp(22px, 5vw, 28px);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+    .lead {
+      font-size: 16px;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+    .btn {
+      appearance: none;
+      border: 0;
+      cursor: pointer;
+      width: 100%;
+      min-height: 56px;
+      border-radius: 10px;
+      background: var(--green);
+      color: #fff;
+      font-family: inherit;
+      font-weight: 800;
+      font-size: 18px;
+      box-shadow: 0 0 16px 6px rgba(45, 184, 76, 0.45);
+      animation: glow 1.6s ease-in-out infinite;
+    }
+    .btn:hover { background: var(--green-hover); }
+    .btn:disabled {
+      background: #9aa0a6;
+      box-shadow: none;
+      animation: none;
+      cursor: default;
+    }
+    @keyframes glow {
+      0%, 100% { box-shadow: 0 0 10px 3px rgba(45, 184, 76, 0.4); }
+      50% { box-shadow: 0 0 22px 8px rgba(45, 184, 76, 0.85); }
+    }
+    .status {
+      margin-top: 14px;
+      padding: 12px 14px;
+      border-radius: 8px;
+      background: #fff8d6;
+      font-size: 15px;
+      font-weight: 600;
+      display: none;
+    }
+    .status.show { display: block; }
+    .status.ok { background: #e8f8ec; }
+    .list {
+      list-style: none;
+      margin-top: 22px;
+      display: grid;
+      gap: 8px;
+    }
+    .list a {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+      background: #f6f6f6;
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-weight: 700;
+    }
+    .list a:hover { background: #ececec; }
+    .list span {
+      font-weight: 600;
+      color: #666;
+      font-size: 13px;
+      word-break: break-all;
+    }
+    footer {
+      text-align: center;
+      color: #777;
+      font-size: 13px;
+      padding: 18px 8px 0;
+    }
+    footer a { color: #555; }
+    footer .sep { margin: 0 8px; color: #bbb; }
+  </style>
+</head>
+<body>
+  <div class="notice">Opens all 20 page variants in new Chrome tabs</div>
+  <main class="page">
+    <section class="card">
+      <h1>Open all 20 variants</h1>
+      <p class="lead">Chrome blocks pop-ups unless you click. Use the button below — it opens every variant in a new tab.</p>
+      <button class="btn" id="openAll" type="button">Open all 20 pages</button>
+      <p class="status" id="status"></p>
+      <ul class="list" id="list"></ul>
+    </section>
+    <footer>
+      <a href="privacy.html">Privacy Policy</a>
+      <span class="sep">|</span>
+      <a href="terms.html">Terms and Conditions</a>
+    </footer>
+  </main>
+  <script>
+    var PAGES = [
+      { file: "v1.html", name: "Navy official" },
+      { file: "v2.html", name: "Sage / pill buttons" },
+      { file: "v3.html", name: "Urgent red" },
+      { file: "v4.html", name: "Dark mode" },
+      { file: "v5.html", name: "Split photo" },
+      { file: "v6.html", name: "Hero overlay" },
+      { file: "v7.html", name: "Trust blue" },
+      { file: "v8.html", name: "Editorial cream" },
+      { file: "v9.html", name: "Compact teal" },
+      { file: "v10.html", name: "Premium gold" },
+      { file: "v11.html", name: "Sticky actions" },
+      { file: "v12.html", name: "Photo sheet" },
+      { file: "v13.html", name: "News brief" },
+      { file: "v14.html", name: "Large type" },
+      { file: "v15.html", name: "Benefits" },
+      { file: "v16.html", name: "Messages" },
+      { file: "v17.html", name: "Step check" },
+      { file: "v18.html", name: "Note card" },
+      { file: "v19.html", name: "Official form" },
+      { file: "v20.html", name: "Care check" }
+    ];
+
+    var list = document.getElementById("list");
+
+    PAGES.forEach(function (page) {
+      var li = document.createElement("li");
+      var a = document.createElement("a");
+      a.href = page.file;
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.innerHTML = page.name + "<span>https://www.ssaprograms.org/" + page.file + "</span>";
+      li.appendChild(a);
+      list.appendChild(li);
+    });
+
+    function openAll() {
+      var opened = 0;
+      PAGES.forEach(function (page) {
+        var win = window.open(page.file, "ssa-" + page.file.replace(".html", ""));
+        if (win) opened += 1;
+      });
+      return opened;
+    }
+
+    function showStatus(opened) {
+      var status = document.getElementById("status");
+      status.classList.add("show");
+      if (opened >= PAGES.length) {
+        status.classList.add("ok");
+        status.textContent = "Opened all 20 pages in new tabs.";
+      } else if (opened > 0) {
+        status.textContent = "Opened " + opened + " of 20. Allow pop-ups for this site, then click the button again.";
+      } else {
+        status.textContent = "Chrome blocked the new tabs. Click the address-bar pop-up icon, choose Always allow, then click the button again.";
+      }
+    }
+
+    document.getElementById("openAll").addEventListener("click", function () {
+      showStatus(openAll());
+    });
+
+    window.addEventListener("load", function () {
+      var opened = openAll();
+      if (opened > 0) showStatus(opened);
+    });
+  </script>
+</body>
+</html>
