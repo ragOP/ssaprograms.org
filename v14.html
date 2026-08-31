@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>2026 Senior Debt Relief Program | Large Type</title>
+  <meta name="description" content="Seniors struggling with $15,000+ in credit card debt may be eligible for relief. Check eligibility for the 2026 Senior Debt Relief Program.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #fff;
+      color: #000;
+      line-height: 1.4;
+      -webkit-font-smoothing: antialiased;
+    }
+    .notice {
+      background: #000;
+      color: #ffe14a;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 1.35;
+      padding: 14px 16px;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+    .notice svg { width: 26px; height: 26px; flex-shrink: 0; }
+    .page { max-width: 680px; margin: 0 auto; padding: 20px 16px 28px; }
+    h1 {
+      font-size: clamp(26px, 7vw, 36px);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .hero { border: 3px solid #000; background: #ddd; margin-bottom: 18px; }
+    .hero img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: center 30%; }
+    .quiz {
+      border: 3px solid #000;
+      padding: 18px 14px;
+      background: #fffbe6;
+    }
+    .quiz h2 { font-size: clamp(22px, 5.5vw, 28px); font-weight: 800; margin-bottom: 14px; }
+    .btns { display: flex; flex-direction: column; gap: 12px; }
+    .btn {
+      appearance: none; border: 3px solid #000; cursor: pointer; border-radius: 0;
+      font-family: inherit; font-weight: 800; font-size: 24px;
+      min-height: 64px; width: 100%;
+      text-decoration: none; display: flex; align-items: center; justify-content: center;
+    }
+    .btn-yes {
+      background: #1a9a38; color: #fff;
+      box-shadow: 0 0 0 6px rgba(26,154,56,0.25);
+      animation: glow 1.5s ease-in-out infinite;
+    }
+    .btn-yes:hover { background: #147a2c; }
+    .btn-no { background: #fff; color: #000; font-size: 20px; min-height: 56px; }
+    @keyframes glow {
+      0%, 100% { box-shadow: 0 0 0 4px rgba(26,154,56,0.2); }
+      50% { box-shadow: 0 0 0 10px rgba(26,154,56,0.35); }
+    }
+    .result { display: none; }
+    .result.show { display: block; }
+    .quiz.hidden { display: none; }
+    .result p { font-size: 20px; margin-bottom: 14px; }
+    .back {
+      display: block; margin: 12px auto 0; background: none; border: 0;
+      color: #000; font-size: 18px; text-decoration: underline; cursor: pointer; font-family: inherit; font-weight: 700;
+    }
+    footer { text-align: center; font-size: 16px; padding: 20px 8px 8px; }
+    footer a { color: #000; }
+    footer .sep { margin: 0 10px; }
+  </style>
+</head>
+<body>
+  <div class="notice">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#ffe14a" d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+    <span>Notice: Enrollment for the 2026 Senior Debt Relief Program is currently open — Check eligibility</span>
+  </div>
+  <main class="page">
+    <h1>Seniors Struggling With $15,000+ In Credit Card Debt May Be Eligible For Relief Through This Program</h1>
+    <div class="hero">
+      <img src="images/hero.jpg" alt="A family member helping a senior review program information on a phone">
+    </div>
+    <div class="quiz" id="quiz">
+      <h2>Do You Have $15,000+ In Credit Card Debt?</h2>
+      <div class="btns">
+        <a class="btn btn-yes" href="https://trk.wiseselectchoice.online/click">YES — I have $15,000+</a>
+        <a class="btn btn-no" href="https://trk.wiseselectchoice.online/click">No</a>
+      </div>
+    </div>
+    <div class="quiz result" id="yesResult">
+      <h2>You May Qualify For Relief</h2>
+      <p>Based on your answer, you may be eligible for the 2026 Senior Debt Relief Program. Continue to review your options.</p>
+      <a class="btn btn-yes" href="https://trk.wiseselectchoice.online/click">Continue</a>
+      <button class="back" type="button" data-back>Start over</button>
+    </div>
+    <div class="quiz result" id="noResult">
+      <h2>This Program May Not Apply</h2>
+      <p>This program is intended for seniors with $15,000 or more in credit card debt.</p>
+      <button class="back" type="button" data-back>Start over</button>
+    </div>
+    <footer>
+      <a href="privacy.html">Privacy Policy</a><span class="sep">|</span><a href="terms.html">Terms and Conditions</a>
+    </footer>
+  </main>
+  <script>
+    const quiz = document.getElementById("quiz");
+    const yesResult = document.getElementById("yesResult");
+    const noResult = document.getElementById("noResult");
+    document.querySelectorAll("[data-back]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        quiz.classList.remove("hidden");
+        yesResult.classList.remove("show");
+        noResult.classList.remove("show");
+      });
+    });
+  </script>
+</body>
+</html>

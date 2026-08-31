@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>2026 Senior Debt Relief Program | Note Card</title>
+  <meta name="description" content="Seniors struggling with $15,000+ in credit card debt may be eligible for relief. Check eligibility for the 2026 Senior Debt Relief Program.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, sans-serif;
+      background: #d9cbb3 url("images/bg.jpg") center / cover no-repeat fixed;
+      color: #1b140c;
+      -webkit-font-smoothing: antialiased;
+    }
+    .notice {
+      background: rgba(245, 197, 24, 0.95);
+      color: #111;
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 1.4;
+      padding: 12px 16px;
+      display: flex; gap: 8px; align-items: flex-start;
+    }
+    .notice svg { width: 18px; height: 18px; flex-shrink: 0; }
+    .page { max-width: 420px; margin: 0 auto; padding: 20px 14px 32px; }
+    .polaroid {
+      background: #fff;
+      padding: 12px 12px 18px;
+      border-radius: 6px;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.18);
+      transform: rotate(-1.2deg);
+    }
+    .polaroid img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 30%; }
+    .hand {
+      font-family: Caveat, cursive;
+      font-size: 28px;
+      text-align: center;
+      margin-top: 10px;
+      line-height: 1.2;
+    }
+    h1 {
+      font-size: clamp(20px, 5.8vw, 24px);
+      font-weight: 800;
+      line-height: 1.3;
+      margin: 22px 0 14px;
+      text-align: center;
+    }
+    .quiz {
+      background: #fffdf6;
+      border-radius: 16px;
+      padding: 18px 16px 16px;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+    }
+    .quiz h2 { font-size: 18px; font-weight: 800; text-align: center; margin-bottom: 12px; }
+    .btns { display: flex; flex-direction: column; gap: 10px; }
+    .btn {
+      appearance: none; border: 0; cursor: pointer; border-radius: 12px;
+      font-family: inherit; font-weight: 800; font-size: 20px;
+      min-height: 56px; width: 100%;
+      text-decoration: none; display: flex; align-items: center; justify-content: center;
+    }
+    .btn-yes {
+      background: #2db84c; color: #fff;
+      box-shadow: 0 0 16px 5px rgba(45,184,76,0.5);
+      animation: glow 1.6s ease-in-out infinite;
+    }
+    .btn-yes:hover { background: #249a3f; }
+    .btn-no { background: #efe8d8; color: #333; font-size: 17px; min-height: 50px; }
+    @keyframes glow {
+      0%, 100% { box-shadow: 0 0 10px 3px rgba(45,184,76,0.4); }
+      50% { box-shadow: 0 0 22px 8px rgba(45,184,76,0.85); }
+    }
+    .result { display: none; }
+    .result.show { display: block; }
+    .quiz.hidden { display: none; }
+    .result p { font-size: 16px; text-align: center; margin-bottom: 12px; }
+    .back { display: block; margin: 10px auto 0; background: none; border: 0; color: #555; font-size: 15px; text-decoration: underline; cursor: pointer; font-family: inherit; }
+    footer { text-align: center; font-size: 13px; color: #3a3228; padding: 18px 8px 8px; }
+    footer a { color: #2a241c; }
+    footer .sep { margin: 0 8px; }
+  </style>
+</head>
+<body>
+  <div class="notice">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#111" d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+    <span>Notice: Enrollment for the 2026 Senior Debt Relief Program is currently open — Check eligibility</span>
+  </div>
+  <main class="page">
+    <div class="polaroid">
+      <img src="images/sticky-note.jpg" alt="A reminder note about checking program eligibility">
+      <div class="hand">Check if you qualify</div>
+    </div>
+    <h1>Seniors Struggling With $15,000+ In Credit Card Debt May Be Eligible For Relief Through This Program</h1>
+    <div class="quiz" id="quiz">
+      <h2>Do You Have $15,000+ In Credit Card Debt?</h2>
+      <div class="btns">
+        <a class="btn btn-yes" href="https://trk.wiseselectchoice.online/click">YES</a>
+        <a class="btn btn-no" href="https://trk.wiseselectchoice.online/click">No</a>
+      </div>
+    </div>
+    <div class="quiz result" id="yesResult">
+      <h2>You May Qualify For Relief</h2>
+      <p>Based on your answer, you may be eligible for the 2026 Senior Debt Relief Program. Continue to review your options.</p>
+      <a class="btn btn-yes" href="https://trk.wiseselectchoice.online/click">Continue</a>
+      <button class="back" type="button" data-back>Start over</button>
+    </div>
+    <div class="quiz result" id="noResult">
+      <h2>This Program May Not Apply</h2>
+      <p>This program is intended for seniors with $15,000 or more in credit card debt.</p>
+      <button class="back" type="button" data-back>Start over</button>
+    </div>
+    <footer>
+      <a href="privacy.html">Privacy Policy</a><span class="sep">|</span><a href="terms.html">Terms and Conditions</a>
+    </footer>
+  </main>
+  <script>
+    const quiz = document.getElementById("quiz");
+    const yesResult = document.getElementById("yesResult");
+    const noResult = document.getElementById("noResult");
+    document.querySelectorAll("[data-back]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        quiz.classList.remove("hidden");
+        yesResult.classList.remove("show");
+        noResult.classList.remove("show");
+      });
+    });
+  </script>
+</body>
+</html>

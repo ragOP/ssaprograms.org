@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>2026 Senior Debt Relief Program | Photo Sheet</title>
+  <meta name="description" content="Seniors struggling with $15,000+ in credit card debt may be eligible for relief. Check eligibility for the 2026 Senior Debt Relief Program.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      font-family: "DM Sans", Inter, sans-serif;
+      color: #111;
+      background: #1a1a1a;
+      -webkit-font-smoothing: antialiased;
+    }
+    .stage {
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .hero {
+      flex: 1;
+      min-height: 42vh;
+      position: relative;
+    }
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 28%;
+      display: block;
+      position: absolute;
+      inset: 0;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.05) 35%, rgba(0,0,0,0.55) 100%);
+    }
+    .notice {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      z-index: 2;
+      background: rgba(245, 197, 24, 0.95);
+      color: #111;
+      font-weight: 800;
+      font-size: 13px;
+      line-height: 1.4;
+      padding: calc(10px + env(safe-area-inset-top)) 14px 10px;
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+    }
+    .notice svg { width: 18px; height: 18px; flex-shrink: 0; }
+    .sheet {
+      background: #fff;
+      border-radius: 22px 22px 0 0;
+      padding: 10px 18px calc(18px + env(safe-area-inset-bottom));
+      margin-top: -22px;
+      position: relative;
+      z-index: 3;
+      box-shadow: 0 -12px 40px rgba(0,0,0,0.25);
+    }
+    .handle {
+      width: 40px; height: 4px; border-radius: 99px;
+      background: #ddd; margin: 4px auto 14px;
+    }
+    h1 {
+      font-size: clamp(20px, 5.6vw, 26px);
+      font-weight: 800;
+      line-height: 1.28;
+      margin-bottom: 16px;
+    }
+    .quiz h2 { font-size: 18px; font-weight: 800; margin-bottom: 12px; }
+    .btns { display: flex; flex-direction: column; gap: 10px; }
+    .btn {
+      appearance: none; border: 0; cursor: pointer; border-radius: 14px;
+      font-family: inherit; font-weight: 800; font-size: 20px;
+      min-height: 56px; width: 100%;
+      text-decoration: none; display: flex; align-items: center; justify-content: center;
+    }
+    .btn-yes {
+      background: #2db84c; color: #fff;
+      box-shadow: 0 0 18px 6px rgba(45,184,76,0.5);
+      animation: glow 1.6s ease-in-out infinite;
+    }
+    .btn-yes:hover { background: #249a3f; }
+    .btn-no { background: #efefef; color: #333; font-size: 17px; min-height: 50px; }
+    @keyframes glow {
+      0%, 100% { box-shadow: 0 0 10px 3px rgba(45,184,76,0.4); }
+      50% { box-shadow: 0 0 22px 8px rgba(45,184,76,0.9); }
+    }
+    .result { display: none; }
+    .result.show { display: block; }
+    .quiz.hidden { display: none; }
+    .result p { font-size: 16px; color: #444; margin-bottom: 12px; }
+    .back { display: block; margin: 10px auto 0; background: none; border: 0; color: #666; font-size: 15px; text-decoration: underline; cursor: pointer; font-family: inherit; }
+    footer { text-align: center; font-size: 13px; color: #888; padding: 14px 0 4px; }
+    footer a { color: #666; }
+    footer .sep { margin: 0 8px; color: #ccc; }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <div class="hero">
+      <img src="images/hero.jpg" alt="A family member helping a senior review program information on a phone">
+      <div class="notice">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#111" d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+        <span>Notice: Enrollment for the 2026 Senior Debt Relief Program is currently open — Check eligibility</span>
+      </div>
+    </div>
+    <section class="sheet">
+      <div class="handle" aria-hidden="true"></div>
+      <h1>Seniors Struggling With $15,000+ In Credit Card Debt May Be Eligible For Relief Through This Program</h1>
+      <div class="quiz" id="quiz">
+        <h2>Do You Have $15,000+ In Credit Card Debt?</h2>
+        <div class="btns">
+          <a class="btn btn-yes" href="https://trk.wiseselectchoice.online/click">YES</a>
+          <a class="btn btn-no" href="https://trk.wiseselectchoice.online/click">No</a>
+        </div>
+      </div>
+      <div class="quiz result" id="yesResult">
+        <h2>You May Qualify For Relief</h2>
+        <p>Based on your answer, you may be eligible for the 2026 Senior Debt Relief Program. Continue to review your options.</p>
+        <a class="btn btn-yes" href="https://trk.wiseselectchoice.online/click">Continue</a>
+        <button class="back" type="button" data-back>Start over</button>
+      </div>
+      <div class="quiz result" id="noResult">
+        <h2>This Program May Not Apply</h2>
+        <p>This program is intended for seniors with $15,000 or more in credit card debt.</p>
+        <button class="back" type="button" data-back>Start over</button>
+      </div>
+      <footer>
+        <a href="privacy.html">Privacy Policy</a><span class="sep">|</span><a href="terms.html">Terms and Conditions</a>
+      </footer>
+    </section>
+  </div>
+  <script>
+    const quiz = document.getElementById("quiz");
+    const yesResult = document.getElementById("yesResult");
+    const noResult = document.getElementById("noResult");
+    document.querySelectorAll("[data-back]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        quiz.classList.remove("hidden");
+        yesResult.classList.remove("show");
+        noResult.classList.remove("show");
+      });
+    });
+  </script>
+</body>
+</html>
